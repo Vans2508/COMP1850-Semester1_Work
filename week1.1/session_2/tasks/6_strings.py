@@ -10,10 +10,10 @@ print(f"Modified String 3: {user_string.strip()}") #prints the original strings 
 print(f"Modified String 4: {user_string.replace('a', '@')}") #prints the original string while replacing a 'a' with a '@'
 print(f"Modified String 5: {user_string.capitalize()}") #prints the original string with every letter capatalised
 print(f"Modified String 6: {user_string[::-1]}") #prints the original string backwards
-print(f"Modified String 7: {user_string.title()}")
-print(f"Modified String 8: {len(user_string)}")
-print(f"Modified String 9: {user_string.find('a')}") 
-print(f"Modified String 10: {user_string.count('a')}")
+print(f"Modified String 7: {user_string.title()}") #prints the original string with the first letter capital of each word
+print(f"Modified String 8: {len(user_string)}") #prints the number of charcters in the string
+print(f"Modified String 9: {user_string.find('a')}") #prints 
+print(f"Modified String 10: {user_string.count('a')}") 
 print(f"Modified String 11: {user_string.startswith('Hello')}")
 print(f"Modified String 12: {user_string.endswith('!')}")
 print(f"Modified String 13: {user_string.isalnum()}")
