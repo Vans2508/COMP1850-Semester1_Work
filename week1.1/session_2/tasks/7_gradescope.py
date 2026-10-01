@@ -21,4 +21,4 @@ try:
     product = num1 *num2
     print(f"The product of {num1} x {num2} is {product}")
 except:
-    print("This is not a number")
+    print("That is not a number")
