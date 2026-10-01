@@ -14,3 +14,10 @@
 
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
+
+try:
+    num1=int(input('Enter a number'))
+    num2=int(input('Enter another number'))
+    print(f"The product of {num1} x {num2} is {num1*num2}")
+except:
+    print("This is not a number")
