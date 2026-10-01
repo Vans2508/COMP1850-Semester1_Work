@@ -3,16 +3,16 @@
 
 user_string = input("Enter a string: ")
 
-print(f"\nOriginal String: {user_string}")
-print(f"Modified String 1: {user_string.lower()}")
-print(f"Modified String 2: {user_string.upper()}")
-print(f"Modified String 3: {user_string.strip()}")
-print(f"Modified String 4: {user_string.replace('a', '@')}")
-print(f"Modified String 5: {user_string.capitalize()}")
-print(f"Modified String 6: {user_string[::-1]}")
+print(f"\nOriginal String: {user_string}") #prints the original string
+print(f"Modified String 1: {user_string.lower()}") #prints the original string in lowercase
+print(f"Modified String 2: {user_string.upper()}") #prints the original string in uppercase
+print(f"Modified String 3: {user_string.strip()}") #prints the original strings while removing any spaces
+print(f"Modified String 4: {user_string.replace('a', '@')}") #prints the original string while replacing a 'a' with a '@'
+print(f"Modified String 5: {user_string.capitalize()}") #prints the original string with every letter capatalised
+print(f"Modified String 6: {user_string[::-1]}") #prints the original string backwards
 print(f"Modified String 7: {user_string.title()}")
 print(f"Modified String 8: {len(user_string)}")
-print(f"Modified String 9: {user_string.find('a')}")
+print(f"Modified String 9: {user_string.find('a')}") 
 print(f"Modified String 10: {user_string.count('a')}")
 print(f"Modified String 11: {user_string.startswith('Hello')}")
 print(f"Modified String 12: {user_string.endswith('!')}")
