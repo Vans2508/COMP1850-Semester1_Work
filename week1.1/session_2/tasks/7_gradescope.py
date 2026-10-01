@@ -18,6 +18,7 @@
 try:
     num1=int(input('Enter a number: '))
     num2=int(input('Enter another number: '))
-    print(f"The product of {num1} x {num2} is {num1*num2}")
+    product = num1 *num2
+    print(f"The product of {num1} x {num2} is {product}")
 except:
     print("This is not a number")
