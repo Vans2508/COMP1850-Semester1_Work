@@ -15,10 +15,10 @@ print(f"Modified String 8: {len(user_string)}") #prints the number of charcters 
 print(f"Modified String 9: {user_string.find('a')}") #prints 
 print(f"Modified String 10: {user_string.count('a')}") 
 print(f"Modified String 11: {user_string.startswith('Hello')}")
-print(f"Modified String 12: {user_string.endswith('!')}")
-print(f"Modified String 13: {user_string.isalnum()}")
-print(f"Modified String 14: {user_string.isalpha()}")
-print(f"Modified String 15: {user_string.isdigit()}")
+print(f"Modified String 12: {user_string.endswith('!')}") 
+print(f"Modified String 13: {user_string.isalnum()}") #
+print(f"Modified String 14: {user_string.isalpha()}") #prints true or false depending if therre are symbols in the string
+print(f"Modified String 15: {user_string.isdigit()}") #prints true or false depending if there are digits in the string
 
 
 
