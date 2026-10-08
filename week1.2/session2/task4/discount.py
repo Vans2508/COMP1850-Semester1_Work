@@ -13,13 +13,13 @@ cost = int(input("Amount spent: "))
 is_member = input("Are you a member? (y/n): ").lower()
 is_student = input("Are you a student? (y/n): ").lower()
 
-if XXX:
+if is_member == 'y' and is_student == 'y':
     final_cost = cost * 0.7
-elif XXX:
+elif is_member == 'y':
     final_cost = cost * 0.75
-elif XXX:
+elif is_student == 'y':
     final_cost = cost * 0.85
 else:
     final_cost = cost
 
-print(f"Final amount including discount: {final_cost}")
+print(f"Final amount including discount: £{final_cost:.2f}")
