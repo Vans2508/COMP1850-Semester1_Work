@@ -16,8 +16,8 @@ else:
     length = len(sorted_list)
     mid = length // 2
     if mid % 2 == 0:
-        median = sorted_list[mid]
-    else:
         median = (sorted_list[mid - 1] + sorted_list[mid]) / 2
+    else:
+        median = sorted_list[mid]
     print(f"Median = {median}")
 
