@@ -6,16 +6,18 @@ machine_status = int(input("Enter the operational status of the machine 1-operat
 
 if machine_status == 1:
     if machine_temp > 80:
-        print(f"The temperature is too high reommend shutting the machine")
-    elif machine_temp >= 50 and temp < 80:
+        print(f"The temperature is too high the machine is running in unsafe conditions, recommend shutting the machine")
+    elif machine_temp >= 50 and machine_temp < 80:
         print(f"The temperature is within safe limits")
     elif machine_temp < 50:
         print(f"The machine temperature is low. No action needed")
     else:
         print(f"Not a valid temperature")
     if machine_pressure > 100:
-        print(f"High temperature spotted. Need maintenance")
+        print(f"High temperature spotted, the machine is running in unsafe conditions need maintenance")
     elif machine_pressure >= 70 and machine_pressure < 100:
         print(f"Stable temperature")
     elif machine_pressure < 70:
         print(f"The pressure is low. The system is operating normally")
+else:
+    print(f"The machine is not currently operating, no immediate action is needed.")
