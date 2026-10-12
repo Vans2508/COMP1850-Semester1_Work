@@ -8,5 +8,7 @@ while fruit:
 
 
 # Why does this work?
+#it says if fruit exists then loop through it
 
 # What features of Python does it rely on?
+#boolean logic which returns true every time the loop is run so its repeatedly being called ie always true

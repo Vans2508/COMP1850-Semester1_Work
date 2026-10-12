@@ -2,9 +2,10 @@
 
 sum = 0
 
-for k in range(1,10):
-    sum = sum + k ** 2
-
+for k in range(0,20,2):
+    print(k**2)
+    sum = sum + (k ** 2)
+    print(sum)
 print(sum)
 
 
