@@ -5,9 +5,10 @@
 
 # open and read the file
 data = []
-with open("story.txt", "r") as infile:
-    for line in infile:
-        data = line.strip()
+with open("glasses.txt", "r") as infile:
+    text = infile.read()
+words = text.split()
+print(f"Word count: {len(words)}")
 
 
         
