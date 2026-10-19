@@ -5,6 +5,9 @@
 # You could handle file errors with try/except.
 
 # Read the file content
+with open("task4/images/feep.pgm", "r")as infile:
+    dimensions = infile.read(1)
+print(dimensions)
 
 # print image dimension (i.e., Dimensions: width x height pixels)
 

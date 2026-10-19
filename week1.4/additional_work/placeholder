@@ -1,0 +1,4 @@
+set1 = ["apple", "orange", "apple", "grape"]
+set2 = ["orange", "kiwi", "banana"]
+new = set1.intersection(set2)
+print(new)

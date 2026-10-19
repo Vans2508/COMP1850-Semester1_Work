@@ -11,20 +11,22 @@
 def process_data(data):
     """
     Processes a list of integers and returns the sum of all values.
-    If the list is empty, it returns None.
+    If the list is empty, it returns 0.
 
     Args:
         data (list of int): The list of integers to process.
 
     Returns:
-        int: The sum of all integers in the list or None if empty.
+        int: The sum of all integers in the list or 0 if empty.
     """
     if not data:
         return 0
     return sum(data)
 
 # What is output from the following line of code?
-print(process_data([1, 2, 3, 4, 5]))  # 15?
+print(process_data([1, 2, 3, 4, 5]))  # 15
 
 # How about this one?
-print(process_data([]))               # None?
+print(process_data([]))               # 0
+
+print(process_data([1,3,5,32,234,7])) # 282
