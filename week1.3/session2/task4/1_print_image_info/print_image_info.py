@@ -5,9 +5,18 @@
 # You could handle file errors with try/except.
 
 # Read the file content
-with open("task4/images/feep.pgm", "r")as infile:
-    dimensions = infile.read(1)
-print(dimensions)
+from pathlib import Path
+image_file = Path(__file__).parent.parent /"images" / "feep.pgm"
+try:
+    with image_file.open("r") as infile:
+        lines = infile.readlines()
+    width, height = lines[1].split()
+    max_gray_value = lines[2].strip()
+    print(f"Dimensions: {width} x {height} pixels")
+    print(f"Max Grey Value: {max_gray_value}")
+except FileNotFoundError:
+    print(f"Error: Could not find {image_file}")
+
 
 # print image dimension (i.e., Dimensions: width x height pixels)
 

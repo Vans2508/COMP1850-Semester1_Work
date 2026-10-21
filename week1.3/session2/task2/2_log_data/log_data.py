@@ -18,3 +18,31 @@
 # - Each row has: Date, Time, IP_Address, User_Agent, Request, Status_Code
 # - You need to find rows where Request = "POST /login" AND Status_Code = "401"
 # - You can use list comprehension or loops to filter the data
+import csv
+from pathlib import Path
+
+log_file = Path(__file__).with_name("site.log")
+
+try:
+    with log_file.open("r", newline="", encoding="utf-8") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if (
+                row["Request"] == "POST /login"
+                and row["Status_Code"] == "401"
+            ):
+                print(
+                    f"IP address {row['IP_Address']} "
+                    f"failed to login at {row['Time']} "
+                    f"on {row['Date']}"
+                )
+
+except FileNotFoundError:
+    print(f"Error: The file '{log_file}' was not found.")
+
+except PermissionError:
+    print(f"Error: Permission denied when opening '{log_file}'.")
+
+except KeyError as error:
+    print(f"Error: Missing expected column {error}.")
