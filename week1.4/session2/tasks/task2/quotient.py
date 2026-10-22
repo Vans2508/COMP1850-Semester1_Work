@@ -18,7 +18,8 @@ def divide_and_remainder(dividend, divisor):
     """
 
     # complete your code here
-
+    quotient = dividend // divisor  # Integer division to get the quotient
+    remainder = dividend % divisor   # Modulus operation to get the remainder
     # Returning both quotient and remainder
     return quotient, remainder
 
