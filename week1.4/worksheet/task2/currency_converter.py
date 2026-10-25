@@ -30,7 +30,7 @@ def currency_converter(amount, from_currency, to_currency):
         return 0.0
     # your code here
 
-    return (f"{converted_currency} {to_currency}")
+    return (round(converted_currency,2))
 
 # Submit only this file currency_converter.py with the completed function.
 
