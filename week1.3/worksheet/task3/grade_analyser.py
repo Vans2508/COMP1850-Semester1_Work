@@ -3,8 +3,29 @@
 # Your code for the overall grade classification
 
 # ask for filename of the student file
-
+filename = input("Enter a file_name ")
+output_filename = filename + "_out.csv"
 # open the file
+with open(filename, 'r') as input_file, open(output_filename, "w") as output_file:
+    next(input_file)
+    for line in input_file:
+        row = line.strip().split(",") 
+
+        student_id = row[0] # stores the student_id of the student
+
+        modules = [int(value) for value in row[1:] if value !=""] #stores the grades for one student
+        average_grade = sum(modules) / len(modules) #finds the average grade of one student by dividing the sum of all the modules by the number of modules
+        if average_grade >= 70 and average_grade <= 100:
+            classification = "1"
+        elif average_grade >= 60:
+            classification = "2:1" 
+        elif average_grade >= 50:
+            classification = "2:2"
+        elif average_grade >= 40:
+            classification = "3"
+        else:
+            classification = "F"
+        output_file.write(f"{student_id},{average_grade:.2f},{classification}\n")
 
 # read in the data, and for each student calculate their average grade and classification
 

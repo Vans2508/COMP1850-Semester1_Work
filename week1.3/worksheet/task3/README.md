@@ -10,7 +10,7 @@ The classifications and boundaries are as follows:
     >=40 : 3
     <40 : F
 
-Each student's data is stored in a row in a csv file (4 sample files have been provided).
+Each student's data is stored in a row in a csv file (4 sample files have been provided). 
 
 Students can have between 1 - 12 modules, for example:
 
