@@ -17,10 +17,20 @@ def currency_converter(amount, from_currency, to_currency):
         'PHP': {'CNY': 0.12, 'GBP': 0.01, 'INR': 1.45},
         'INR': {'PHP': 0.69, 'CNY': 0.09, 'GBP': 0.01}
     }
-
+    if amount > 0:
+        if from_currency == "GBP":
+            converted_currency = float(conversion_rate[from_currency][to_currency]) * amount
+        elif from_currency == "CNY":
+            converted_currency = float(conversion_rate[from_currency][to_currency]) * amount
+        elif from_currency == "PHP":
+            converted_currency = float(conversion_rate[from_currency][to_currency]) * amount
+        elif from_currency == "INR":
+            converted_currency = float(conversion_rate[from_currency][to_currency]) * amount
+    else:
+        return 0.0
     # your code here
 
-    return None
+    return (f"{converted_currency} {to_currency}")
 
 # Submit only this file currency_converter.py with the completed function.
 
