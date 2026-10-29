@@ -24,6 +24,6 @@ class Person:
     # (see README.md for further details)
     def initials(self):
         words = self.name.split()
-        return
+        return 
     def is_birthday(self):
         return self.birth.date() == date.today()

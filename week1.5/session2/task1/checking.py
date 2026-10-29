@@ -14,8 +14,16 @@ class Point:
         """
         Creates a Point, given x & y coordinates.
         """
-        self.x = x
-        self.y = y
+        if isinstance(x, (int, float)):
+            self.x = x
+        else:
+            raise TypeError("The x-coordinate must be a number")
+        
+        if isinstance(y, (int, float)):
+            self.y = y
+        else:
+            raise TypeError("The y-coordinate must be a number")
+
 
     def distance(self):
         """
