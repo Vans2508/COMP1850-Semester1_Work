@@ -19,10 +19,10 @@ class Rectangle:
         if not isinstance(height, (int, float)):
             raise TypeError("Height must be a number")
         
-        if width < 0:
+        if width <= 0:
             raise ValueError("Width must be a non-negative number")
         
-        if height < 0:
+        if height <= 0:
             raise ValueError("Height must be a non-negative number")
     
     # Implement methods is_square(), area() & perimeter() here

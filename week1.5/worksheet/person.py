@@ -10,6 +10,9 @@ class Person:
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
     def __init__(self,name,birth):
+        """
+        Creates a Person class initalising it with a name and a birth date 
+        """
         self.name = name
         self.birth = birth
 
@@ -23,7 +26,17 @@ class Person:
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
     def initials(self):
+        """
+        Returns the initials of the person
+        """
         words = self.name.split()
         return "".join([name[0].upper() for name in words])
     def is_birthday(self):
-        return self.birth == date.today()
+        """
+        Returns true if today is the person's birthday based on their birth date
+        """
+        Today = date.today()
+        if Today == self.birth:
+            return True
+        else:
+            return False
