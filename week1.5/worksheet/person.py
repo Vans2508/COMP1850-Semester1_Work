@@ -26,4 +26,4 @@ class Person:
         words = self.name.split()
         return "".join([name[0].upper() for name in words])
     def is_birthday(self):
-        return self.birth.date() == date.today()
+        return self.birth == date.today()

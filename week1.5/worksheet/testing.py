@@ -14,7 +14,8 @@ print(square.is_square()) #True
 print("Rectangle tests passed.")
 
 import person
+from datetime import date
 
-per = person.Person("Vanshita Swami","25/08/2008")
+per = person.Person("Vanshita Swami", date(2008, 8, 25))
 print(per.initials())
-print(is_birthday())
+print(per.is_birthday())
