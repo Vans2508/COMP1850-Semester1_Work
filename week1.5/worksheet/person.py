@@ -35,8 +35,5 @@ class Person:
         """
         Returns true if today is the person's birthday based on their birth date
         """
-        Today = date.today()
-        if Today == self.birth:
-            return True
-        else:
-            return False
+        today = date.today()
+        return self.birth.month == today.month and self.birth.day == today.day

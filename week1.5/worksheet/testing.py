@@ -16,6 +16,6 @@ print("Rectangle tests passed.")
 import person
 from datetime import date
 
-per = person.Person("Vanshita Swami", date(2008, 8, 25))
+per = person.Person("Vanshita Swami", date(2026, 11, 1))
 print(per.initials())
 print(per.is_birthday())
