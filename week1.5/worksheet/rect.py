@@ -10,20 +10,20 @@ class Rectangle:
         """
         # Add code here to check type and value of provided width & height,
         # raising appropriate exceptions if necessary (see README.md)
+        if type(width) is not int:
+            raise TypeError("Width must be an integer")
+
+        if type(height) is not int:
+            raise TypeError("Height must be an integer")
+
+        if width <= 0:
+            raise ValueError("Width must be greater than 0")
+
+        if height <= 0:
+            raise ValueError("Height must be greater than 0")
+
         self.width = width
         self.height = height
-        
-        if not isinstance(width, (int, float)):
-            raise TypeError("Width must be a number")
-        
-        if not isinstance(height, (int, float)):
-            raise TypeError("Height must be a number")
-        
-        if width <= 0:
-            raise ValueError("Width must be a non-negative number")
-        
-        if height <= 0:
-            raise ValueError("Height must be a non-negative number")
     
     # Implement methods is_square(), area() & perimeter() here
     # (See README.md for details of what they should do)
