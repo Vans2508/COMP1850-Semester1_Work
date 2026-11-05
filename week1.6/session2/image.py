@@ -11,6 +11,7 @@ class ImageError(Exception):
     """
     Exception for problems that may occur when creating Image objects.
     """
+    
 
 
 class Image:
