@@ -1,24 +1,15 @@
 import image
+from pathlib import Path
 
+input_file = Path(__file__).resolve().parents[2] / "images" / "coins.pgm"
+img = image.Image.read(input_file)
+lookup = [255 - value for value in range(256)]
+result = img.copy()
 
+for i in range(result.width * result.height):
+    result[i] = lookup[result[i]]
 
-lookup = list(range(256))
-
-def apply_lookup(img, lookup):
-    img = image.Image()
-    img_read = img.read("coins.pgm")
-    result = img.copy()
-
-    for i in range(result.width * result.height):
-        result[i] = lookup[result[i]]
-
-    return result
-
-img = image.Image()
-
-result = apply_lookup(img, lookup)
-print(result.write_pgm("coins_inverted.pgm"))
-
+result.write_pgm(Path(__file__).with_name("coins_inverted.pgm"))
 
 
 
