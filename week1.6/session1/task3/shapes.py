@@ -39,3 +39,6 @@ class Shape:
 
 # Implement your Circle class here
 # Make sure that it inherits properly from Shape!
+class Circle(Shape):
+    def __init__(self):
+        super().__init__()
