@@ -13,3 +13,7 @@ def comfort_level(temperature):
         return "HOT"
     else:
         return "OK"
+
+print(comfort_level(12.3))
+print(comfort_level(17.1))
+print(comfort_level(33))

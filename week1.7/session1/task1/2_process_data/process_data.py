@@ -16,3 +16,6 @@ def process_data(data):
         return None
 
     return sum(data)
+
+
+print(process_data([24,67,-67,3,57,8.6]))

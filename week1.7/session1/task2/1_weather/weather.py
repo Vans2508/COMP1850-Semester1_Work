@@ -9,7 +9,7 @@ def comfort_level(temperature):
     """
     if temperature <= 15.0:
         return "COLD"
-    elif temperature > 25.0:
+    elif temperature >= 25.0:
         return "HOT"
     else:
         return "OK"
