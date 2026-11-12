@@ -11,4 +11,4 @@ def calculate_total(cart_items):
     final_total = subtotal + 5
     return final_total
 
-calculate_total([20, 30, 10])
+print(calculate_total([20, 30, 10]))

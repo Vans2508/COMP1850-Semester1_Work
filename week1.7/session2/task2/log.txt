@@ -1,0 +1,3 @@
+INFO:root:calculate_average(): started
+DEBUG:root:87.66666666666667
+DEBUG:root:87

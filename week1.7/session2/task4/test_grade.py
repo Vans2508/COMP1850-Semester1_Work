@@ -9,7 +9,7 @@ def assert_MarkError(bad_mark):
         assert False, f"No exception thrown for mark of {bad_mark}"
     except MarkError:
         pass
-    except Exception:
+    except MarkError:
         assert False, "Exception should be MarkError"
 
 
