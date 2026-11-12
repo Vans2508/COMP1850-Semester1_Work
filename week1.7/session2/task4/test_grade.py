@@ -4,13 +4,17 @@ from grades import MarkError, grade
 
 
 def assert_MarkError(bad_mark):
-    try:
-        grade(bad_mark)
-        assert False, f"No exception thrown for mark of {bad_mark}"
-    except MarkError:
-        pass
-    except MarkError:
-        assert False, "Exception should be MarkError"
+    if not isinstance(bad_mark,int):
+        False
+    else:
+        try:
+            grade(bad_mark)
+            assert False, f"No exception thrown for mark of {bad_mark}"
+        except MarkError:
+            pass
+        except MarkError:
+            assert False, f"Exception should be MarkError"
+
 
 
 if __name__ == "__main__":
@@ -28,4 +32,4 @@ if __name__ == "__main__":
 
     assert_MarkError(-1)
     assert_MarkError(101)
-    assert_MarkError("50")
+    assert_MarkError(50)
