@@ -3,7 +3,7 @@ import pandas
 data = pandas.read_csv("lifestyle_data.csv")
 
 # What data type is `data` as output from the `read_csv()` method?
-
+print(data)
 # For each of the following pieces of information, try and use pandas to find the answer from the dataset in 'data'
 # - You can open the csv file to see what data is available.
 # - Use the pandas documentation to explore functions that you can use.
