@@ -2,7 +2,7 @@
 import httpx
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import numpy as np
 api_key="U6KXJTZC2E8VGH39PD7UMG4BZ"   # your API key
 
 city="Leeds"     # city location
@@ -40,6 +40,12 @@ df = pd.DataFrame(temp_data)
 # using matplotlib plot the 3 data sets: (tempmin,temp,tempmax) as line graphs
 
 df.plot()
+
+x=np(temp_data)
+
+
+plt.ylabel('Temp Max (F)')
+plt.xlabel('Day No.')
 
 plt.show()
 

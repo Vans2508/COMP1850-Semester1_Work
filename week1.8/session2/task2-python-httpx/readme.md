@@ -22,6 +22,14 @@ The `httpx.get(url)` method returns a `response` object that we can interrogate
 
 What is the difference?
 
+It is different to the command line httpx as it only prints the status code for the command however when using the command line we get:
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Date: Thu, 19 Nov 2026 16:33:22 GMT
+Content-Length: 421
+
+
 # Extension
 
 `httpx.get()` may not succeed
