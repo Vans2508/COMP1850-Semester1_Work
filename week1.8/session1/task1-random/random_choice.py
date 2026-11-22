@@ -12,3 +12,6 @@ with open("names.txt") as infile:
 # from the list, avoiding any duplicate choices
 
 # Display the chosen names, one per line
+
+
+random.choice([k for k in range(3,21,2)])
